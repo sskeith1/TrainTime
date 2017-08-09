@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Time</title>
+
+	<link rel="stylesheet" href="assets/css/reset.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<!--Header-->
+	<div class="container">
+		<div class="jumbotron" style="background-color: black ; color: white;">
+			<h1 class="text-center"><strong></i>Train Timetable</strong><br><small style="font-size: 50%;">As the title above suggests, this is a train time table...</small><br><small style="font-size: 30%;">Obviously</small></h1>
+		</div>
+
+<!--Train Schedule (Populated from Inputs)-->
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+
+
+				<div class="panel-heading" style="background-color: black ; color: white;">
+					<h3 class="panel-title"><strong><i class="fa fa-table"></i>Train Schedule</strong></h3>
+				</div>
+
+				<div class="panel-body" id="trainTable">
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+<!--Add Train (Input)-->
+	
+        <div class="row">
+            <div class="col-sm-12">
+            <br>
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading" style="background-color: black ; color: white;">
+                        <h3 class="panel-title"><strong><i class="fa  fa-list-alt"></i>New Train</strong></h3>
+                    </div>
+                <div class="panel-body">
+
+
+        <!--Inputs-->        
+                <form role="form">
+                    <div class="form-group">
+                        <label for="search">New train:</label>
+                        <input type="text" class="form-control" id="trainName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Destination:</label>
+                        <input type="text" class="form-control" id="trainDestination">
+                    </div>
+
+        
+                    <div class="form-group">
+                        <label for="start-year">Train Time (Military Time):</label>
+                        <input type="text" class="form-control" id="trainTime">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="monthly-rate">Frequency (min):</label>
+                        <input type="text" class="form-control" id="trainFrequency">
+                    </div>
+
+
+                        <button type="submit" class="btn btn-default" id="btn-submit">Submit</button>
+
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+		
+
+
+
+	</div>
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script src="assets/javascript/java.js"></script>
+</body>
+</html>
