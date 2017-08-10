@@ -78,6 +78,11 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 	var nextArrival = moment().add(minutesAway, "m").format("hh:mm A");
 
+	if (minutesAway.val() <1 ) {
+		departure.val() = departure + frequency
+		
+	};
+
 
 	$("#trainTable > tbody").append(
 		"<tr><td>" + Fname + 
