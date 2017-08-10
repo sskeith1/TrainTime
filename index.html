@@ -30,7 +30,21 @@
 					<h3 class="panel-title"><strong><i class="fa fa-table"></i>Train Schedule</strong></h3>
 				</div>
 
-				<div class="panel-body" id="trainTable">
+				<div class="panel-body">
+                    <table class="table table-hover" id="trainTable">
+                        <thead id="tableHead">
+                            <tr>
+                                <th>Train</th>
+                                <th>Destination</th>
+                                <th>Frequency (Min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contents">
+                        </tbody>
+                    </table>
+
 				</div>
 
 
@@ -93,6 +107,7 @@
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 <script src="assets/javascript/java.js"></script>
 </body>
 </html>
