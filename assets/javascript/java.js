@@ -83,7 +83,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 		"<tr><td>" + Fname + 
 		"</td><td>" + Fdestination + 
 		"</td><td>" + Ffrequency + 
-		"</td><td>" + nextArrival + 
+		"</td><td><span id='flash'>" + nextArrival + "</span>" +
 		"</td><td>" + minutesAway + 
 		"</td><td>");
 });
